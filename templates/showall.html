@@ -1,0 +1,12 @@
+{% extends "master.html" %}
+{% block title %}All posts{% endblock %}
+{% block content %} 
+		{% for post in allposts %}
+			<div class='inline'>
+				<h3 class='subjectpost'>{{post.subject}}</h3>
+				<div class='datepost'>{{post.created.strftime("%b %d, %Y")}}</div>
+			</div>
+			<div class='contentpost'><hr>{{post.content}}</div>
+			<br><br><br>
+		{% endfor %}	
+{% endblock%}

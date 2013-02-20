@@ -1,0 +1,12 @@
+{% extends "master.html"%}
+{% block title %}Submitted post{% endblock%}
+{% block content %}
+		{% for post in lastpost %}	
+			<div class='inline'>
+				<h3 class='subjectpost'>{{post.subject}}</h3>
+				<div class='datepost'>{{post.created}}</div>
+			</div>
+			<div class='contentpost'><hr>{{post.content}}</div>
+			<br><br><br>
+		{% endfor %}
+{% endblock %}

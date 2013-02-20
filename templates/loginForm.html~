@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>loginForm</title>
+		<meta name="author" content="Alex" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="loginFormStyle.css" type="text/css">
+
+	</head>
+
+	<body>
+	<div id='general'>
+		<h2>Registration form</h2>
+		<div id='formspace'>	
+			<h3>Please fill the form:</h3>
+				<form method='post'>
+					<table>
+						<tr>
+							<td>Username:</td>
+							<td><input name="username" value={{username}} ></td>
+							<td><a class='error'>{{error_username}}</a></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" name="password" value=""></td>
+							<td><a class='error'>{{error_password}}</a></td>
+						</tr>		
+						<tr>
+							<td>Verify Password:</td>
+							<td><input type="password" name="verify" value="" ></td>
+							<td><a class='error'>{{error_verify}}</a></td>
+						</tr>
+						<tr>
+							<td>Email (optional):</td>
+							<td><input name="email" value={{email}} ></td>
+							<td><a class='error'>{{error_email}}</a></td>
+						</tr>
+					</table>							
+					<br><br>
+					<input type="submit" value="Submit form" id='submit'>	
+				</form>
+				<br>
+		</div>
+	</div>
+
+	<body>
+</html>

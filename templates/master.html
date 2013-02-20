@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<link rel="stylesheet" href="/static/newpoststyle.css"/>
+			<title> {% block title %}{% endblock %} - My web</title>
+
+	</head>
+	<body>
+		<h1><a class="ref" href="/blog">Test Blog</a></h1>
+		<a class="button" href="/blog/newpost">About</a>
+		<a class="button" href="/blog/newpost">New Post</a>
+		<a class="button" href="/blog">All Posts</a>
+		<br><br><br>
+		<div id="content">{% block content %}{% endblock %}</div>
+		</div>
+	</body>
+</html>

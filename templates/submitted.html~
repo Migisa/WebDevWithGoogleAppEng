@@ -1,0 +1,10 @@
+{% extends "master.html"%}
+{% block title %}Submitted post{% endblock%}
+{% block content %}
+		{% for post in lastpost %}	
+			<h2>{{post.subject}}</h2>
+			<div>{{post.created}}</div>
+			<hr>
+			<div>{{post.content}}</div>
+		{% endfor %}
+{% endblock %}

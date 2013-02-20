@@ -1,0 +1,30 @@
+{% extends "master.html" %}
+{% block title %}New post{% endblock %}
+{% block content %}
+
+	<div class='inline'>
+			<h3  class='subjectpost'>new post</h3>	
+	</div>
+	<div class='contentpost'><hr>
+		<form method="post" class='contentpost'>
+			<label>
+				<div>subject</div>
+				<input type="text" name="subject" value="{{subject}}" class='newpostsubject'>					
+			</label>
+			<br><br>
+			<label > 
+				<div>blog</div>
+				<textarea rows=20 cols=70 name="content" class='newpostcontent'>{{content}}</textarea>	
+			</label>
+			<br>
+			<div class="error">{{error}}</div>
+			<input type='submit' value='Submit'>
+		</form>
+	</div>
+
+{% endblock %}
+
+
+
+
+	
